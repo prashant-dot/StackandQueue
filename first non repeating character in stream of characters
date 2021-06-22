@@ -1,0 +1,21 @@
+from collections import deque
+class Solution:
+    # @param A : string
+    # @return a strings
+    def solve(self, A):
+        l = []
+        rep = []
+        out = ""
+        for i in A:
+            if i in l:
+                rep.append(i)
+                l.remove(i)
+            else:
+                if i not in rep:
+                    l.append(i)
+            if len(l) == 0:
+                out = out + '#'
+            else:
+                out = out + l[0]
+        return out
+  ==>TC=O(n) and SC=O(n)
