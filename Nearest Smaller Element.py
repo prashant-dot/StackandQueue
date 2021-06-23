@@ -13,4 +13,4 @@ class Solution:
             l.append(x)
             stack.append(A[i])
         return l       
-==>TC=O(n^2) and SC=O(n)
+==>TC=O(n) and SC=O(n)
